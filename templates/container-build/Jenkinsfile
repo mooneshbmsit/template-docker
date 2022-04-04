@@ -1,4 +1,4 @@
-@Library('gdocker-shared-lib')_
+@Library('docker-shared-lib')_
 
 /* Pipeline */
 pipeline {
