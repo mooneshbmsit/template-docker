@@ -23,9 +23,13 @@ parameters:
     type: string
     displayName: "Space-separated list of name patterns to ignore even if matched by the includes list. For example: release alpha-* beta-*"
 
+  - name: github_creds
+    type: credentials
+    displayName: Specify the GitHub Credentials ID name for the source code repository (mandatory)
+
   - name: dockerfiles
     type: string
-    displayName: templates/container-build/Dockerfile
+    displayName: Specify the path to the Dockerfile(s) as semicolon delimited string e.g. app01/Dockerfile (optional)
     
   - name: build_arguments
     type: string
@@ -33,7 +37,7 @@ parameters:
 
   - name: docker_tag
     type: string
-    displayName: mooneshbmsit/shared-lib-test:latest
+    displayName: Specify the container tagname e.g. arnabdnany1706/smartdb:latest (mandatory)
 
 multibranch:
   branchSource:
